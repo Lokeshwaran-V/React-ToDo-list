@@ -69,7 +69,7 @@ export default function toDo() {
               <div className="heading">Created</div>
               <div className="heading">Title - Description</div>
               <div className="heading">Progress</div>
-              <div className="heading">Modify</div>
+              <div className="heading">Modi</div>
             </div>
             {list.map((item) => {
               return (
