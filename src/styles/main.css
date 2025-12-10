@@ -1,0 +1,115 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: black;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 1rem;
+    box-shadow: 0rem 0rem 1rem 1rem gray;
+
+}
+
+.container__top{
+    width: 100%;
+    border: 0.2rem solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.container__title {
+    font-size: 2rem;
+}
+
+.container__inputs {
+    width: 100%;
+}
+
+.container__inputs--inputfield {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container__inputs--inputfield input, 
+.container__inputs--inputfield textarea {
+    width: 90%;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem;
+    margin: 0.5rem;
+    resize: vertical;
+}
+
+.container__inputs--inputfield button {
+    width: 25%;
+    height: 5rem;
+    background: rgb(190, 72, 237);
+    color: black;
+    margin: 1rem;
+}
+.container__bottom{
+    width: 100%;
+    /* border: 0.2rem solid gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__list {
+    width: 100%;
+    
+}
+
+.container__list--title .heading{
+    position:sticky;
+}
+.container__list--title, .container__list--data{
+    width: 100%;
+    padding: 0.2rem;
+    display: grid;
+    grid-template-columns: minmax(40px, 0.2fr) minmax(80px, 0.4fr) minmax(40px, 2fr) minmax(51px, 0.4fr) minmax(50px, 0.4fr) ;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+.container__list .container__list--title .heading,
+.container__list--data .id, .created, .title, .progress, .modify{
+    border: 0.1rem solid black;
+    align-content: center;
+    padding: 0rem 0.5rem;
+}
+
+.container__list--data .title{
+    text-align: start;
+}
+
+.container__list--data .progress, .modify {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.container__list--data .progress select {
+    font-size: 1.5rem;
+}
+.container__list--data .modify button {
+    font-size: 1.5rem;
+    width: 45%;
+}
+
+.container__list--data .title {
+    word-wrap: break-word;
+}
