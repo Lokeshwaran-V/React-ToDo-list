@@ -67,12 +67,20 @@
 }
 
 .container__list {
-    width: 100%;
-    
+    width: 100%;   
 }
 
-.container__list--title .heading{
+.container__list--title{
     position:sticky;
+    top: 0;
+    background-color: white;
+}
+.container__list--title .heading{
+    padding: 0.5rem;
+    /* margin: 0.5rem; */
+    border: 0.1rem solid black;
+    align-content: center;
+    font-weight: bold;
 }
 .container__list--title, .container__list--data{
     width: 100%;
@@ -80,11 +88,12 @@
     display: grid;
     grid-template-columns: minmax(40px, 0.2fr) minmax(80px, 0.4fr) minmax(40px, 2fr) minmax(51px, 0.4fr) minmax(50px, 0.4fr) ;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    text-wrap: 25px;
 
 }
 
-.container__list .container__list--title .heading,
+
 .container__list--data .id, .created, .title, .progress, .modify{
     border: 0.1rem solid black;
     align-content: center;
@@ -103,11 +112,14 @@
 }
 
 .container__list--data .progress select {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    width: 75%;
+    height: 5vh;
 }
 .container__list--data .modify button {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     width: 45%;
+    height: 5vh;
 }
 
 .container__list--data .title {
